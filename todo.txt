@@ -1,0 +1,1 @@
+hide text from entries and show with button (js)

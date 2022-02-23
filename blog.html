@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<title>Jarviss blog</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<script>
+    function toggleText(id, btn){
+      var x = document.getElementById(id);
+      var y = document.getElementById(btn);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        y.innerHTML = "<b>COLLAPSE ↰</b>";
+        y.style.float = "right";
+        y.style.marginBottom = "10px";
+      } else {
+        x.style.display = "none";
+        y.innerHTML = "<b>READ ↳</b>";
+        y.style.float = "left";
+      }
+    }
+    </script>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b><span style="color: #002C47;">Internship at </span><span style="color: #E51630;">Jarviss</span></b></h1>
+  <p><span class="w3-tag" style="background-color: #002C47;">Gauthier Vandenabeele</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+    
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+        <img src="./img/jarviss_eye.png" alt="Jarviss" style="width:100%">
+        <div class="w3-container">
+            <h3><b>INTRODUCTION</b></h3>
+            <h5>Introduction to the company, <span class="w3-opacity">Jan 24</span></h5>
+        </div>
+        <div class="w3-container">
+            <div id="text0" style="display: none;">
+                <h6><b>Premises and Internal Infrastructure</b></h6>
+                <p>After meeting Xanti at the reception of Idola Business Center, he showed me around the building and explained how the internal infrastructure was set up.</p>
+                <h6><b>People</b></h6>
+                <p>In the first week of work in the office, I already got to know several of the employees of Jarviss. The others I saw for the first time in the weekly online teambuilding call on friday.</p>
+            </div>
+            <div class="w3-row">
+                <p><button id="btn0" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text0', 'btn0')"><b>READ ↳</b></button></p>
+            </div>
+        </div>
+        <div style="background-color: #002C47;">
+            <br>
+        </div>
+    </div>
+
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+        <img src="./img/pa_beacon.png" alt="beacon" style="width:100%">
+        <div class="w3-container">
+            <h3><b>THE FIRST DAYS</b></h3>
+            <h5>New company, new technologies, <span class="w3-opacity">Jan 24-28</span></h5>
+        </div>
+        <div class="w3-container">
+            <div id="text2" style="display: none;">
+                <h6><b>Courses</b></h6>
+                <p>Jarviss works with a lot of technologies that were not included in my curiculum at Odisee. To compensate for this, the first days of my internship were filled with courses and research. You can find them listed below.</p>
+                <ul>
+                    <li><a href="https://partners.sentinelone.com/prm/English/s/training-user/certifications" target="blank">SentinelOne University:</a> SentinelOne Core Workshop</li>
+                    <li><a href="https://beacon.paloaltonetworks.com/student/path/666206-cortex-xsoar" target="blank">Palo Alto Cortex XSOAR:</a></li>
+                    <ul>
+                        <li>Introduction to Cortex XSOAR</li>
+                        <li>IT Administrator Training</li>
+                        <li>Administrator Training for MSSP</li>
+                        <li>SOAR Engineer Training</li>
+                    </ul>
+                    <li>Juniper Mist AI: AIDE Bootcamp for new partners/hires</li>
+                    <li>Junos Configurations</li>
+                </ul>
+            </div>
+            <div class="w3-row">
+                <p><button id="btn2" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text2', 'btn2')"><b>READ ↳</b></button></p>
+            </div>
+        </div>
+        <div style="background-color: #FB5E34;">
+            <br>
+        </div>
+    </div>
+
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+    <img src="./img/juniper_mist.png" alt="Mist" style="width:100%">
+        <div class="w3-container">
+            <h3><b>MY FIRST TASK</b></h3>
+            <h5>Juniper Mist VC, <span class="w3-opacity">Feb 14-15</span></h5>
+        </div>
+        <div class="w3-container">
+            <div id="text1" style="display: none;">
+                <h6><b>Assignment</b></h6>
+                <p>Replace an old Avaya and 3Com switch with three Juniper switches that are joined in a virtual chassis (VC). The configuration has to be managed by Mist.</p>
+                <h6><b>Work Process</b></h6>
+                <p>From the configuration files of the old switches I made an spreadsheet of all the VLANs, port configurations and the IP configuration of the switch. <br> Next, I mapped the old ports to ports on the VC. Now I had created a clear guidline for the configuration of the VC ports.</p>
+                <p>Although I had never used Mist AI before, the way it worked was not a mystery to me because of the bootcamp I had followed the week before. <br> Soulaiman had already claimed the switches and added them to a VC so I could immediately start with the configuration. <br>I configured the IP settings and created the VLANs. After linking the VLANs to port profiles, I could finally use these to create port configurations.</p>
+                <h6><b>Evaluation</b></h6>
+                <p>This task was assigned to me by Yves, on wednesday the 23th of February he gave me feedback on the configuration.</p>
+            </div>
+        <div class="w3-row">
+            <p><button id="btn1" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text1', 'btn1')"><b>READ ↳</b></button></p>
+        </div>
+        </div>
+        <div style="background-color: #0096A4;">
+            <br>
+        </div>
+    </div>
+
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+        <img src="./img/cortex-xsoar-logo.png" alt="Cortex XSOAR" style="width:100%">
+        <div class="w3-container">
+            <h3><b>ITEGRATIONS</b></h3>
+            <h5>Cortex XSOAR integration for Palo Alto Firewalls, <span class="w3-opacity">Feb 17,21</span></h5>
+        </div>
+        <div class="w3-container">
+            <div id="text3" style="display: none;">
+                    <h6><b>Assignment</b></h6>
+                    <p>Write an integration for Palo Alto firewalls to check if security policies log on start. Later write an intergration that turns this feature off.<br> This assignment was completed in colaboration with Xanti and Kevin</p>
+                    <h6><b>Work Process</b></h6>
+                    <p>First we tested how we could get the required data from the Palo Alto API by writing a python script.</p>
+                    <p>To become familiar with integrations, I first followed a tutorial for a basic integration (<a href="https://xsoar.pan.dev/docs/tutorials/tut-integration-ui" target="blank">Yoda Speak</a>).</p>
+                    <p>The rest of the assignment has yet to happen.</p>
+            </div>
+            <div class="w3-row">
+                <p><button id="btn3" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text3', 'btn3')"><b>READ ↳</b></button></p>
+            </div>
+        </div>
+        <div style="background-color: #00CC66;">
+            <br>
+        </div>
+    </div>
+
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+        <img src="./img/html_email_template.png" alt="mail template" style="width:100%">
+        <div class="w3-container">
+            <h3><b>AUTOMATED EMAILS WITH CORTEX XSOAR</b></h3>
+            <h5>XSOAR data collection email and HTML messaging template, <span class="w3-opacity">Feb 22</span></h5>
+        </div>
+        <div class="w3-container">
+            <div id="text4" style="display: none;">
+                    <h6><b>Assignment</b></h6>
+                    <p>TODO</p>
+                    <h6><b>Content of the mail</b></h6>
+                    <p>TODO</p>
+                    <h6><b>Layout of the mail</b></h6>
+                    <p>In Cortex XSOAR you can add a server configuration that contains a style template for all mails this server will send. <br>You can apply it by adding a server configuration named "messages.html.formats.externalformsubmit" under Settings > About > Troubleshooting.</p>
+            </div>
+            <div class="w3-row">
+                <p><button id="btn4" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text4', 'btn4')"><b>READ ↳</b></button></p>
+            </div>
+        </div>
+        <div style="background-color: #3297F3;">
+            <br>
+        </div>
+    </div>
+
+<!-- END BLOG ENTRIES -->
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+    
+    <!-- About Card -->
+    <div class="w3-card w3-margin w3-margin-top">
+        <img src="./img/jarviss_logo.png" alt="Jarviss" style="width: 100%; background-color: white;">
+        <div class="w3-container w3-white">
+            <h4><b>ABOUT</b></h4>
+            <p>This is a blog about my internship at Jarviss. My mentor at the company was <a href="mailto:xanti.hermo@jarviss.be">Xanti Hermo</a>.
+                <br>Odisee, my school, also provided a mentor which was <a href="mailto:sven.sanders@odisee.be">Sven Sanders</a>. 
+                <br>I started on the 24th of January 2022 and finished my internship on the 26th of May.
+            </p>
+        </div>
+        <div style="background-color: #E51630;">
+            <br>
+        </div>
+    </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <p>Gauthier Vandenabeele - <a href="https://www.jarviss.be" target="blank">Jarviss</a></p>
+</footer>
+
+</body>
+</html>
+
