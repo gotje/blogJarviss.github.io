@@ -23,7 +23,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         y.style.float = "left";
       }
     }
-    </script>
+</script>
 <body class="w3-light-grey">
 
 <!-- w3-content defines a container for fixed size centered content, 
@@ -133,12 +133,12 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
         <div class="w3-container">
             <div id="text3" style="display: none;">
-                    <h6><b>Assignment</b></h6>
-                    <p>Write an integration for Palo Alto firewalls to check if security policies log on start. Later write an intergration that turns this feature off.<br> This assignment was completed in colaboration with Xanti and <a href="mailto:kevin.thys@jarviss.be">Kevin</a>.</p>
-                    <h6><b>Work Process</b></h6>
-                    <p>First we tested how we could get the required data from the Palo Alto API by writing a python script.</p>
-                    <p>To become familiar with integrations, I first followed a tutorial for a basic integration (<a href="https://xsoar.pan.dev/docs/tutorials/tut-integration-ui" target="blank">Yoda Speak</a>).</p>
-                    <p>The rest of the assignment has yet to happen.</p>
+                <h6><b>Assignment</b></h6>
+                <p>Write an integration for Palo Alto firewalls to check if security policies log on start. Later write an intergration that turns this feature off.<br> This assignment was completed in colaboration with Xanti and <a href="mailto:kevin.thys@jarviss.be">Kevin</a>.</p>
+                <h6><b>Work Process</b></h6>
+                <p>First we tested how we could get the required data from the Palo Alto API by writing a python script.</p>
+                <p>To become familiar with integrations, I first followed a tutorial for a basic integration (<a href="https://xsoar.pan.dev/docs/tutorials/tut-integration-ui" target="blank">Yoda Speak</a>).</p>
+                <p>The rest of the assignment has yet to happen.</p>
             </div>
             <div class="w3-row">
                 <p><button id="btn3" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text3', 'btn3')"><b>READ ↳</b></button></p>
@@ -158,18 +158,41 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
         <div class="w3-container">
             <div id="text4" style="display: none;">
-                    <h6><b>Assignment</b></h6>
-                    <p>This task has two parts, the first is to create a CSS template in XSOAR that is used by the automatic Emails of playbooks. <br>Secondly I had to edit several playbooks to use Keys, variables within XSOAR, that can be reused by several mailing tasks within the playbook. Before these tasks used similar blocks of HTML that had to be written individually for every mailing task.</p>
-                    <h6><b>Content of the mail</b></h6>
-                    <p>By adding "set" tasks to the playbook I created the necessary keys and as the playbook progressed this kind of task was also used to concatinate more HTML to the key. <br>Finally the mailing task could use these keys as content of the Email with the syntax ${KeyName}.</p>
-                    <h6><b>Layout of the mail</b></h6>
-                    <p>This part of the assignment has not yet been completed. <br>For now I am searching for a solution by applying a server configuration under <b>Settings > About > Troubleshooting<b>.</p>
+                <h6><b>Assignment</b></h6>
+                <p>This task has two parts, the first is to create a CSS template in XSOAR that is used by the automatic Emails of playbooks. <br>Secondly I had to edit several playbooks to use Keys, variables within XSOAR, that can be reused by several mailing tasks within the playbook. Before these tasks used similar blocks of HTML that had to be written individually for every mailing task.</p>
+                <h6><b>Content of the mail</b></h6>
+                <p>By adding "set" tasks to the playbook I created the necessary keys and as the playbook progressed this kind of task was also used to concatinate more HTML to the key. <br>Finally the mailing task could use these keys as content of the Email with the syntax ${KeyName}.</p>
+                <h6><b>Layout of the mail</b></h6>
+                <p>This part of the assignment has not yet been completed. <br>For now I am searching for a solution by applying a server configuration under <b>Settings > About > Troubleshooting<b>.</p>
             </div>
             <div class="w3-row">
                 <p><button id="btn4" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text4', 'btn4')"><b>READ ↳</b></button></p>
             </div>
         </div>
         <div style="background-color: #3297F3;">
+            <br>
+        </div>
+    </div>
+
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+        <img src="./img/cloudshare.svg" alt="cloudshare logo" style="width:100%">
+        <div class="w3-container">
+            <h3><b>UTD CLOUD NATIVE SECURITY</b></h3>
+            <h5>Prisma Cloud Solutions, <span class="w3-opacity">Feb 24</span></h5>
+        </div>
+        <div class="w3-container">
+            <div id="text5" style="display: none;">
+                <h6><b>Intro</b></h6>
+                <p>While everybody was eating in the conference room of the Idola Business Center an introductory presentation about Prisma Cloud was given by Kevin and Simon Melotte, a Prisma Cloud solutions architect.</p>
+                <h6><b>Lab</b></h6>
+                <p>The second part of the UTD (Ultimate Test Drive) was some hands-on experience in a lab environment. The goal was for the potental clients to get to know the capabilities of the product and to make them see the advantages of implementing it in their cloud environment.</p>
+            </div>
+            <div class="w3-row">
+                <p><button id="btn5" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text5', 'btn5')"><b>READ ↳</b></button></p>
+            </div>
+        </div>
+        <div style="background-color: #E53E16;">
             <br>
         </div>
     </div>
