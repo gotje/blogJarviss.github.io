@@ -114,6 +114,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <p>Although I had never used Mist AI before, the way it worked was not a mystery to me because of the bootcamp I had followed the week before. <br> Soulaiman had already claimed the switches and added them to a VC so I could immediately start with the configuration. <br>I configured the IP settings and created the VLANs. After linking the VLANs to port profiles, I could finally use these to create port configurations.</p>
                 <h6><b>Evaluation</b></h6>
                 <p>This task was assigned to me by <a href="mailto:yves.weyns@jarviss.be">Yves</a>, on wednesday the 23th of February he gave me feedback on the configuration.</p>
+                <h6><b>Installation</b></h6>
+                <p>Date is not yet descided.</p>
             </div>
         <div class="w3-row">
             <p><button id="btn1" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text1', 'btn1')"><b>READ ↳</b></button></p>
@@ -159,7 +161,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-container">
             <div id="text4" style="display: none;">
                 <h6><b>Assignment</b></h6>
-                <p>This task has two parts, the first is to create a CSS template in XSOAR that is used by the automatic Emails of playbooks. <br>Secondly I had to edit several playbooks to use Keys, variables within XSOAR, that can be reused by several mailing tasks within the playbook. Before my changes, these tasks used similar blocks of HTML that had to be written individually for every mailing task.</p>
+                <p>This task has two parts, the first is to create a CSS template in XSOAR that is used by the automatic Emails of playbooks. <br>Secondly, I had to edit several playbooks to use Keys, variables within XSOAR, that can be reused by several mailing tasks within the playbook. Before my changes, these tasks used similar blocks of HTML that had to be written individually for every mailing task.</p>
                 <h6><b>Content of the mail</b></h6>
                 <p>By adding "set" tasks to the playbook I created the necessary keys and as the playbook progressed this kind of task was also used to concatinate more HTML to the key. <br>Finally the mailing task could use these keys as content of the Email with the syntax ${KeyName}.</p>
                 <h6><b>Layout of the mail</b></h6>
@@ -193,6 +195,33 @@ and is wrapped around the whole page content, except for the footer in this exam
             </div>
         </div>
         <div style="background-color: #E53E16;">
+            <br>
+        </div>
+    </div>
+
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+        <img src="./img/pan-strata-logo.png" alt="strata logo" style="width:100%">
+        <div class="w3-container">
+            <h3><b>PALO ALTO FIREWALL</b></h3>
+            <h5>pa-460 firewall deploy, <span class="w3-opacity">Mar 8</span></h5>
+        </div>
+        <div class="w3-container">
+            <div id="text6" style="display: none;">
+                <h6><b>Assignment</b></h6>
+                <p>Replace with two pa-320 firewalls with the newer pa-460 version and transfer the config.</p>
+                <h6><b>Access the web interface</b></h6>
+                <p>By default the only way to configure the firewall is by connecting to the console. To access the web interface, ZTP needs to be disabled and an IP needs to be assigned to the management port. </p>
+                <h6><b>Configuration</b></h6>
+                <p>The configuration from the old firewalls can be exported as an XML file. This file can be uploaded, staged and committed on one of the new firewalls. As the two switches were linked, they were automatically added to a cluster by the old configuration.</p>
+                <h6><b>Installation</b></h6>
+                <p>The firewalls will be mounted in their racks on the 24th of March.</p>
+            </div>
+            <div class="w3-row">
+                <p><button id="btn6" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text6', 'btn6')"><b>READ ↳</b></button></p>
+            </div>
+        </div>
+        <div style="background-color: #FFC20E;">
             <br>
         </div>
     </div>
