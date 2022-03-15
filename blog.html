@@ -226,6 +226,31 @@ and is wrapped around the whole page content, except for the footer in this exam
         </div>
     </div>
 
+    <!-- Blog entry -->
+    <div class="w3-card-4 w3-margin w3-white">
+        <img src="./img/Raid10.png" alt="raid array" style="width:100%">
+        <div class="w3-container">
+            <h3><b>RAID FALURE RECOVERY</b></h3>
+            <h5>recover development environment, <span class="w3-opacity">Mar 10,14,15</span></h5>
+        </div>
+        <div class="w3-container">
+            <div id="text7" style="display: none;">
+                <h6><b>Problem</b></h6>
+                <p>On the 9th of March, two of the four disks in the RAID10 array failed at the same time, presumeably due to a power surge. In this usecase, RAID10 allows for failure of two drives. However the failing drives were in the same RAID1 pool, preventing the array from being rebuilt and making all data unrecoverable.</p>
+                <h6><b>Repairing Hardware</b></h6>
+                <p>The first step in rebuilding the development environment was replacing the broken drives with identical new ones. The raid controller was later used to create a new RAID array.</p>
+                <h6><b>Recovering Data</b></h6>
+                <p>We mounted the new array in ESX and recreated the XSOAR, SilverFort and Palo Alto firewall VMs. I reinstalled and initiated some integrations from the marketplace on the XSOAR server and uploaded playbooks from backups.</p>
+            </div>
+            <div class="w3-row">
+                <p><button id="btn7" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text7', 'btn7')"><b>READ ↳</b></button></p>
+            </div>
+        </div>
+        <div style="background-color: #E84393">
+            <br>
+        </div>
+    </div>
+
 <!-- END BLOG ENTRIES -->
 </div>
 
