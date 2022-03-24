@@ -156,7 +156,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <img src="./img/css_email_template.png" alt="mail template" style="width:100%">
         <div class="w3-container">
             <h3><b>AUTOMATED EMAILS WITH CORTEX XSOAR</b></h3>
-            <h5>XSOAR data collection email and HTML messaging template, <span class="w3-opacity">Feb 22</span></h5>
+            <h5>XSOAR data collection email and HTML messaging template, <span class="w3-opacity">Feb 22; Mar 7,14</span></h5>
         </div>
         <div class="w3-container">
             <div id="text4" style="display: none;">
@@ -204,7 +204,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         <img src="./img/pan_strata_logo.png" alt="strata logo" style="width:100%">
         <div class="w3-container">
             <h3><b>PALO ALTO FIREWALL</b></h3>
-            <h5>pa-460 firewall deploy, <span class="w3-opacity">Mar 8</span></h5>
+            <h5>pa-460 firewall deployment, <span class="w3-opacity">Mar 8,17,24</span></h5>
         </div>
         <div class="w3-container">
             <div id="text6" style="display: none;">
@@ -215,7 +215,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <h6><b>Configuration</b></h6>
                 <p>The configuration from the old firewalls can be exported as an XML file. This file can be uploaded, staged and committed on one of the new firewalls. As the two switches were linked, they were automatically added to a cluster by the old configuration.</p>
                 <h6><b>Installation</b></h6>
-                <p>The firewalls will be mounted in their racks on the 24th of March.</p>
+                <p>The firewalls were mounted in their racks on the 17th of March and the patching took place on the 24th.</p>
             </div>
             <div class="w3-row">
                 <p><button id="btn6" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text6', 'btn6')"><b>READ ↳</b></button></p>
@@ -240,7 +240,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <h6><b>Repairing Hardware</b></h6>
                 <p>The first step in rebuilding the development environment was replacing the broken drives with identical new ones. The raid controller was later used to create a new RAID array.</p>
                 <h6><b>Recovering Data</b></h6>
-                <p>We mounted the new array in ESX and recreated the XSOAR, SilverFort and Palo Alto firewall VMs. I reinstalled and initiated some integrations from the marketplace on the XSOAR server and uploaded playbooks from backups.</p>
+                <p>We mounted the new array in ESX and recreated the XSOAR, SilverFort and Palo Alto firewall VMs. I reinstalled and initiated some integrations from the marketplace on the XSOAR server and uploaded playbooks from backups. The config of the PA-VM was not backed up so with the PanHandler tool the best practice config and some custom zones and policies were configured and committed.</p>
             </div>
             <div class="w3-row">
                 <p><button id="btn7" class="w3-button w3-padding-large w3-white w3-border" onclick="toggleText('text7', 'btn7')"><b>READ ↳</b></button></p>
